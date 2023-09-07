@@ -1,5 +1,3 @@
-
-import './App.css';
 import Accounts from './components/accounts';
 import Repayment from './components/repayment';
 
