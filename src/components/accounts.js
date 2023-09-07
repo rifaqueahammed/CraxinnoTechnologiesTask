@@ -26,7 +26,7 @@ function Accounts() {
       </div>
       <div>
         {accounts.map((account, key) => (
-          <h1>
+          <h1 key={key}>
             Balance:<span className="text-gray-700 ml-2">{account}</span>
           </h1>
         ))}
