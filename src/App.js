@@ -1,10 +1,13 @@
 
 import './App.css';
+import Accounts from './components/accounts';
+import Repayment from './components/repayment';
 
 function App() {
   return (
-    <div className="App">
-      <h1>welcome</h1>
+    <div className="flex">
+      <Accounts/>
+      <Repayment/>
     </div>
   );
 }
