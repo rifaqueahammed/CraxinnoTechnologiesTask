@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import { accountsData } from "../features/accountSlice";
+import Graph from './graph';
 
 function Repayment() {
     const accounts = useSelector((state) => state.account.accounts);
@@ -42,10 +43,8 @@ function Repayment() {
         </button>
       </div>
       <hr></hr>
-      <div className=''>
-        {data.length && data.map((dat,key)=>(
-            <><h1>Month:{dat.month}</h1><h1>Balance: {dat.initialBalance}</h1></>
-        ))}
+      <div className='mt-10 shadow-md'>
+        <Graph />
       </div>
     </div>
   )
